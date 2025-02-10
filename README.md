@@ -2,7 +2,7 @@
 
 ## Installation
 1. Clonez le projet :
-    git clone [<repo_url>](https://github.com/Bernadoadk/fintech_backend) cd fintech-backend
+    git clone [<https://github.com/Bernadoadk/fintech_backend>] cd fintech-backend
 
 2. Installez les dépendances :
     npm install
