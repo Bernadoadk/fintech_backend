@@ -15,8 +15,19 @@
 
 
 ## Endpoints
-    - **POST /api/payments/initiate** : Initier un paiement
-    - **GET /api/payments/verify?transaction_id=<id>** : Vérifier un paiement
+    - **POST /api/payments/initiate** :
+    {
+        "amount": 5000,
+        "email": "client@example.com"
+    }
+    - **GET /api/payments/verify?transaction_id=<id>** :
+    {
+        "success": true,
+        "data": {
+            "tx_ref": "tx-123456789",
+            "payment_link": "https://checkout.flutterwave.com/tx-123456789"
+        }
+    }
 
 ## Tests
     npm test
